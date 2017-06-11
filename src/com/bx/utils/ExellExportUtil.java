@@ -31,7 +31,6 @@ public class ExellExportUtil {
 	 * @param fileName
 	 * @param sheetName
 	 * @param flag
-	 * @return 工作簿
 	 */
 	private static Workbook createExell(String path,String fileName,String sheetName,boolean flag) {
 		Workbook wb = null;
@@ -85,7 +84,6 @@ public class ExellExportUtil {
 	 *            需要导出的对象的集合
 	 * @param flag 
 	 * 			  是否是在后面继续添加
-	 * @return 导出是否成功
 	 */
 	public static void writeToFile(String fileName, String sheetName,
 			String[] cellName, String path, Class<?> clazz, List<?> list,
@@ -126,7 +124,6 @@ public class ExellExportUtil {
 	 * @param wb
 	 * @param path
 	 * @param fileName
-	 * @param flag
 	 */
 	private static void write(Workbook wb, String path, String fileName) {
 		OutputStream os = null;
